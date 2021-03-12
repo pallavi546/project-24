@@ -1,6 +1,6 @@
 class Paper {
     constructor(x, y,radius) {
-
+    this.radius=radius
       var options={
         isStatic:true,
         restitution:0.3,
@@ -20,7 +20,7 @@ class Paper {
       var pos =this.body.position;
       
       fill("pink");
-      this.radius=radius
+      
       circle(x,y,this.radius);
       ellipse(CENTER);
     }
